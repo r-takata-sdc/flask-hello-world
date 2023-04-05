@@ -7,5 +7,5 @@ def hello_world():
     headers = request.headers
     return {
         'ip': ip,
-        'headers': headers
+        'headers': str(headers)
         }
