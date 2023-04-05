@@ -4,4 +4,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     ip = request.environ['REMOTE_ADDR']
-    return ip
+    headers
+    return {
+        'ip': ip,
+        'headers': headers
+        }
